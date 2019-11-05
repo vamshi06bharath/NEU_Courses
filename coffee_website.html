@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color:white;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333333;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111111;
+}
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: black;
+  color:white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* @media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+} */
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center; background-color:black; color: white">Steamin' Mugs</h2>
+
+<ul>
+  <li><a href="./coffee_website.html">Home</a></li>
+  <li><a href="./menu.html">Menu</a></li>
+  <li><a href="./contact.html">Contact</a></li>
+  <li><a href="./about.html">About</a></li>
+  <li><a href="./feedback.html">Feedback</a></li>
+</ul>
+<!-- <header> -->
+  <div>
+        <img src="./coffee.jpg" alt="Coffee picture" background-color=white style="width:1900px">
+  </div>
+<!-- </header> -->
+<section>
+  <!-- <nav>
+    <ul>
+      <li><a href="https://www.google.com/search?q=africa&rlz=1C1CHBF_enUS720US720&oq=africa&aqs=chrome..69i57j0l5.1887j0j7&sourceid=chrome&ie=UTF-8">Africa</a></li>
+      <li><a href="https://www.google.com/search?rlz=1C1CHBF_enUS720US720&sxsrf=ACYBGNTE5mRgKcVRipojHa1elJyBVXnvSQ%3A1572565285461&ei=JXG7XdTjG8GQ5gLfnbaoAw&q=antartica&oq=antartica&gs_l=psy-ab.3..0i67l4j0i10l2j0i67l4.16574.18653..18978...0.3..0.107.772.7j2......0....1..gws-wiz.......0i71j35i39j0i131j0.FQPJrTVT1J0&ved=0ahUKEwiUiueZ1sflAhVBiFkKHd-ODTUQ4dUDCAs&uact=5">Antartica</a></li>
+      <li><a href="https://www.google.com/search?rlz=1C1CHBF_enUS720US720&sxsrf=ACYBGNQ0L8XLF9nCWk1xhG3uEKsVWohUQA%3A1572565305630&ei=OXG7XdmFJtCb5gKYqI24DQ&q=asia&oq=asia&gs_l=psy-ab.3..0i67j0l5j0i131j0l3.26043.26785..27000...0.4..0.88.328.4......0....1..gws-wiz.......0i71j35i39.7Wpb2OHiQ-o&ved=0ahUKEwiZhraj1sflAhXQjVkKHRhUA9cQ4dUDCAs&uact=5">Asia</a></li>
+    </ul>
+  </nav> -->
+
+  <article>
+    <p>Steamin' Mugs is your go-to neighborhood joint, any time, any day. Join us for specialty coffee to pep you up in the morning, organic smoothies, juices, and food to fuel your day, and craft beer, wine, and cocktails to get your night started!</p>
+  </article>
+</section>
+
+<footer>
+  <p><i>Life happens. Coffee helps.</i></p>
+</footer>
+
+</body>
+</html>
