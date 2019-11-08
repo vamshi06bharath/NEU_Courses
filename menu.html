@@ -4,78 +4,7 @@
 <title>coffee shop menu</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  color:white;
-}
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #333333;
-}
-
-li {
-float: left;
-}
-
-li a {
-display: block;
-color: white;
-text-align: center;
-padding: 16px;
-text-decoration: none;
-}
-
-li a:hover {
-background-color: #111111;
-}
-
-/* Style the header */
-header {
-  background-color: black;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-/* Style the footer */
-footer {
-  background-color: #111111;;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-  width: 30%;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="./mystyle.css">
 </head>
 <body>
 
@@ -90,25 +19,51 @@ table, th, td {
 </ul>
 
 <h2>Our Menu</h2>
-
-<table>
+<!-- <div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Hello World!</p>
+  </div>
+</div> -->
+<table id = "menu">
   <tr>
     <th>Type</th>
     <th>Size</th>
     <th>Price</th>
   </tr>
   <tr>
-    <td>Black</td>
+    <td>
+      <div class="dropdown">
+        <span>Black</span>
+        <div class="dropdown-content">
+        <p>Its normal coffee, in that when you brew the grinds and don't add anything extra, it's straight up coffee, and it is dark brown/black.</p>
+        </div>
+      </div>
+      </td>
     <td>Small</td>
     <td>1.5$</td>
   </tr>
   <tr>
-    <td>Espresso</td>
+    <td>
+      <div class="dropdown">
+        <span>Espresso</span>
+        <div class="dropdown-content">
+        <p>Italian origin coffee, brewed by forcing a small amount of nearly boiling water under pressure through finely ground coffee beans.</p>
+        </div>
+      </div>
+    </td>
     <td>Medium</td>
     <td>2$</td>
   </tr>
   <tr>
-    <td>Bullet Proof</td>
+    <td>
+      <div class="dropdown">
+        <span>Bullet Proof</span>
+        <div class="dropdown-content">
+        <p>It is a high-calorie coffee drink intended to replace breakfast.</p>
+        </div>
+      </div>
+    </td>
     <td>Small</td>
     <td>4$</td>
   </tr>
